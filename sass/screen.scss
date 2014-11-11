@@ -3,4 +3,57 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+// Color Variables
+$color-main: #333;
+$color-light: #999;
+$color-accent: #ea4c89;
+// Font Variables
+// 
+
+@import"compass/reset";
+header[role="banner"] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333;
+  #logo {
+    float: left;
+    margin: 0 20px 0 0;
+    img {
+      display: block;
+      opacity: .95;
+    }
+  }
+  h1 {
+    padding: 15px 0;
+    font: {
+      size: 54px;
+      family: Jubilat, Georgia, serif;
+      weight: bold;
+    }
+    line-height: 1;
+    text: {
+      transform: uppercase;
+      align: center;
+    }
+  }
+  background: {
+    color: $color-accent;
+  }
+}
+li a {
+  color: blue;
+  &:hover {
+    color: maroon;
+    border-color: maroon;
+  }
+  &.alert {
+    color: red;
+  }
+  &.success {
+    color: green;
+  }
+}
+section.main p {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}

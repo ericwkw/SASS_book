@@ -66,3 +66,55 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
+
+/* line 14, ../sass/screen.scss */
+header[role="banner"] {
+  margin: 20px 0 30px 0;
+  border-bottom: 4px solid #333;
+  background-color: #ea4c89;
+}
+/* line 17, ../sass/screen.scss */
+header[role="banner"] #logo {
+  float: left;
+  margin: 0 20px 0 0;
+}
+/* line 20, ../sass/screen.scss */
+header[role="banner"] #logo img {
+  display: block;
+  opacity: .95;
+}
+/* line 25, ../sass/screen.scss */
+header[role="banner"] h1 {
+  padding: 15px 0;
+  font-size: 54px;
+  font-family: Jubilat, Georgia, serif;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 42, ../sass/screen.scss */
+li a {
+  color: blue;
+}
+/* line 44, ../sass/screen.scss */
+li a:hover {
+  color: maroon;
+  border-color: maroon;
+}
+/* line 48, ../sass/screen.scss */
+li a.alert {
+  color: red;
+}
+/* line 51, ../sass/screen.scss */
+li a.success {
+  color: green;
+}
+
+/* line 55, ../sass/screen.scss */
+section.main p {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
