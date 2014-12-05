@@ -70,8 +70,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 19, ../sass/screen.scss */
 header[role="banner"] {
   margin: 20px 0 30px 0;
-  border-bottom: 4px solid #333;
-  background-color: #ea4c89;
+  background-color: #999;
 }
 /* line 23, ../sass/screen.scss */
 header[role="banner"] #logo {
@@ -91,6 +90,7 @@ header[role="banner"] h1 {
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
+  text-align: center;
 }
 
 /* line 53, ../sass/screen.scss */
@@ -99,7 +99,7 @@ li a {
 }
 /* line 55, ../sass/screen.scss */
 li a:hover {
-  color: #ea4c89;
+  color: #47ff3d;
 }
 /* line 58, ../sass/screen.scss */
 li a.alert {
@@ -124,9 +124,22 @@ section.main p {
   line-height: 1.4;
 }
 
-/* line 84, ../sass/screen.scss */
-section.secondary {
-  width: 48%;
+/* line 83, ../sass/screen.scss */
+section.color {
+  width: 100%;
+}
+/* line 85, ../sass/screen.scss */
+section.color .primary {
   height: 50px;
-  background: #8d1040;
+  background: #17ff0a;
+}
+/* line 89, ../sass/screen.scss */
+section.color .secondary {
+  height: 50px;
+  background: #08a300;
+}
+/* line 93, ../sass/screen.scss */
+section.color .tertiary {
+  height: 50px;
+  background: #033d00;
 }
