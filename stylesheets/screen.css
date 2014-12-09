@@ -67,22 +67,22 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 header[role="banner"] {
   margin: 20px 0 30px 0;
   background-color: #999;
 }
-/* line 23, ../sass/screen.scss */
+/* line 38, ../sass/screen.scss */
 header[role="banner"] #logo {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 26, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 header[role="banner"] #logo img {
   display: block;
   opacity: .95;
 }
-/* line 32, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 header[role="banner"] h1 {
   padding: 15px 0;
   font-size: 54px;
@@ -93,24 +93,24 @@ header[role="banner"] h1 {
   text-align: center;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 li a {
   color: blue;
 }
-/* line 55, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 li a:hover {
   color: #47ff3d;
 }
-/* line 58, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 li a.alert {
   color: red;
 }
-/* line 61, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 li a.success {
   color: green;
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 body {
   padding: 0.8%;
   font-size: 100%;
@@ -118,28 +118,49 @@ body {
   color: #333;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
+section.main h2 {
+  margin: 0 0 20px 0;
+  font-family: "Jubilat", Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 95, ../sass/screen.scss */
+section.main h3 {
+  margin: 0 0 20px 0;
+  font-family: "Jubilat", Georgia, serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* line 100, ../sass/screen.scss */
 section.main p {
   margin: 0 0 20px 0;
   line-height: 1.4;
 }
 
-/* line 83, ../sass/screen.scss */
-section.color {
-  width: 100%;
-}
-/* line 85, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 section.color .primary {
-  height: 50px;
+  width: 100%;
+  height: 80px;
+  clear: both;
   background: #17ff0a;
 }
-/* line 89, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 section.color .secondary {
-  height: 50px;
+  width: 100%;
+  height: 80px;
+  clear: both;
   background: #08a300;
 }
-/* line 93, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 section.color .tertiary {
-  height: 50px;
+  width: 100%;
+  height: 80px;
+  clear: both;
   background: #033d00;
 }
