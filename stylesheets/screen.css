@@ -67,97 +67,127 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 header[role="banner"] {
   margin: 20px 0 30px 0;
-  background-color: #999;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #333;
 }
-/* line 38, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 header[role="banner"] #logo {
   float: left;
   margin: 0 20px 0 0;
 }
-/* line 41, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 header[role="banner"] #logo img {
   display: block;
   opacity: .95;
 }
-/* line 47, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 header[role="banner"] h1 {
   padding: 15px 0;
+  color: #999;
   font-size: 54px;
-  font-family: "Jubilat", Georgia, serif;
+  font-family: Georgia, serif;
   font-weight: bold;
   line-height: 1;
   text-transform: uppercase;
   text-align: center;
 }
 
-/* line 68, ../sass/screen.scss */
-li a {
+/* line 64, ../sass/screen.scss */
+a {
+  text-decoration: none;
   color: blue;
 }
-/* line 70, ../sass/screen.scss */
-li a:hover {
+/* line 67, ../sass/screen.scss */
+a:hover {
   color: #47ff3d;
 }
-/* line 73, ../sass/screen.scss */
-li a.alert {
+/* line 70, ../sass/screen.scss */
+a:active {
+  color: #fff;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  /* Fallback for sad browsers */
+  background-color: #d42a78;
+  /* Mozilla Firefox */
+  background-image: -moz-linear-gradient(#ff70b1, #d42a78);
+  /* Opera */
+  background-image: -o-linear-gradient(#ff70b1, #d42a78);
+  /* Webkit (Safari 4+, Chrome 1+) */
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff70b1), color-stop(1, #d42a78));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-linear-gradient(#ff70b1, #d42a78);
+  /* IE10 */
+  background-image: -ms-linear-gradient(#ff70b1, #d42a78);
+  /* W3C */
+  background-image: linear-gradient(#ff70b1, #d42a78);
+}
+/* line 75, ../sass/screen.scss */
+a.alert {
   color: red;
 }
-/* line 76, ../sass/screen.scss */
-li a.success {
+/* line 78, ../sass/screen.scss */
+a.success {
   color: green;
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body {
   padding: 0.8%;
   font-size: 100%;
-  font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+  font-family: "Helvetica Neue", Verdana, sans-serif;
   color: #333;
 }
 
-/* line 91, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 section.main h2 {
   margin: 0 0 20px 0;
-  font-family: "Jubilat", Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #333;
+  background: #eee;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 section.main h3 {
   margin: 0 0 20px 0;
-  font-family: "Jubilat", Georgia, serif;
+  font-family: Georgia, serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #47ff3d;
+  background: #color-light;
   color: #999;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 section.main p {
   margin: 0 0 20px 0;
   line-height: 1.4;
 }
 
-/* line 107, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 section.color .primary {
   width: 100%;
   height: 80px;
   clear: both;
   background: #17ff0a;
 }
-/* line 111, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 section.color .secondary {
   width: 100%;
   height: 80px;
   clear: both;
   background: #08a300;
 }
-/* line 115, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 section.color .tertiary {
   width: 100%;
   height: 80px;
