@@ -59,7 +59,7 @@ section.main h2 {
 }
 
 section.main h3 {
-  @include title-style($light-color, #fff);
+  @include title-style($medium-color, #fff);
 }
 
 section.main p {
@@ -70,6 +70,7 @@ section.main p {
 // link style
 a {
   text-decoration: none;
+  border-bottom: 1px solid $light-color;
   color: $accent-color;
   &:hover {
     color: $accent-80-color;
