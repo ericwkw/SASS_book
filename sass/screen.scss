@@ -2,14 +2,14 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-
+ 
 // Base
 @import "partials/_base.scss";
 
 // Partials
 @import "compass/reset";
-@import "partials/_typography.scss";
 @import "partials/_grids.scss";
+@import "partials/_typography.scss";
 
 // styling
 body {
@@ -23,6 +23,7 @@ body {
 }
 
 .content-wrapper {
+  @include container(80em);
   margin: 0 auto;
   padding: 0 30px 0 30px;
 }
