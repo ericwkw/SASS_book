@@ -3,83 +3,14 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-//import other files
-@import"compass/reset";
+//import
+@import "compass/reset";
+@import "_mixin_prefixes.scss";
 @import "_mixin.scss";
 @import "_variables.scss";
+@import "_font.scss";
 
-//mixins
-@mixin title-style($color, $background: #eee) {
-  margin: 0 0 20px 0;
-  font-family: $font-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: $color;
-  background: $background;
-}
-
-@mixin color-bar {
-  width: 100%;
-  height: 80px;
-  clear: both;
-}
-
-//main content
-header[role="banner"] {
-  margin: 20px 0 30px 0;
-  @include rounded(10px);
-  
-  #logo {
-    float: left;
-    margin: 0 20px 0 0;
-    img {
-      display: block;
-      opacity: .95;
-    }
-  }
-  
-  h1 {
-    padding: 15px 0;
-    color: $color-light;
-    font: {
-      size: 54px;
-      family: $font-serif;
-      weight: bold;
-    }
-
-    line-height: 1;
-    text: {
-      transform: uppercase;
-      align: center;
-    }
-  }
-
-  background: {
-    color: $color-main;
-  }
-}
-
-
-a {
-  text-decoration: none;
-  color: blue;
-  &:hover {
-    color: $color-accent;
-    }
-  &:active {
-    color: #fff;
-    @include rounded(4px);
-    @include linear-gradient(#ff70b1, #d42a78)   
-  }
-  &.alert {
-    color: red;
-  }
-  &.success {
-    color: green;
-  }
-}
-
+//Styling
 
 body {
   padding: 0.8%;
@@ -90,13 +21,54 @@ body {
   color: $color-main;
 }
 
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
+
+header[role="banner"] {
+  
+  // #logo {
+  //   float: left;
+  //   margin: 0 20px 0 0;
+  //   img {
+  //     display: block;
+  //     opacity: .95;
+  //   }
+  // }
+  
+  h1 {
+    padding: 15px 0 18px 0;
+    margin: 0 auto;
+    color: $color-light;
+    font: {
+      size: 2.5em;
+      family: $font-light;
+    }
+
+    line-height: 1;
+    text: {
+      align: center;
+    }
+  }
+
+  background: {
+    color: $color-brand;
+  }
+}
+
+section {
+  margin-top: 20px;
+}
+
 section.main h2 {
-  @include title-style($color-main);
+  @include title-style($color-main, #fff);
+  font-size: 1.4em;
 }
 
 section.main h3 {
-  @include title-style($color-accent, #color-light);
-  color: #999;
+  @include title-style($color-light, #fff);
+  font-size: 1.2em;
 }
 
 section.main p {
@@ -105,17 +77,19 @@ section.main p {
 }
 
 
-section.color {
-  .primary {
-    @include color-bar;
-    background: darken($color-accent, 10%);
+a {
+  text-decoration: none;
+  color: $color-accent;
+  &:hover {
+    color: $color-brand;
+    }
+  &:active {
+    color: $color-accent;
   }
-  .secondary {
-    @include color-bar;
-    background: darken($color-accent, 30%)
+  &.alert {
+    color: red;
   }
-  .tertiary {
-    @include color-bar;
-    background: darken($color-accent, 50%)
+  &.success {
+    color: green;
   }
 }

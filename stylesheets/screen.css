@@ -67,130 +67,115 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 29, ../sass/screen.scss */
-header[role="banner"] {
-  margin: 20px 0 30px 0;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  background-color: #333;
+/*-------@font-face-------*/
+@font-face {
+  font-family: 'Effra';
+  src: url("Effra-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("Effra-Regular.eot?#iefix") format("embedded-opentype"), url("Effra-Regular.woff") format("woff"), url("Effra-Regular.ttf") format("truetype"), url("Effra-Regular.svg#9415985da0ffc35466232532a260e2fc") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
 }
-/* line 33, ../sass/screen.scss */
-header[role="banner"] #logo {
-  float: left;
-  margin: 0 20px 0 0;
+@font-face {
+  font-family: 'Effra';
+  src: url("Effra-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("Effra-Bold.eot?#iefix") format("embedded-opentype"), url("Effra-Bold.woff") format("woff"), url("Effra-Bold.ttf") format("truetype"), url("Effra-Bold.svg#4d3c8ad532dc39620c1a7258388fab6d") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
 }
-/* line 36, ../sass/screen.scss */
-header[role="banner"] #logo img {
-  display: block;
-  opacity: .95;
+@font-face {
+  font-family: 'Effra Light';
+  src: url("EffraLight-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("EffraLight-Regular.eot?#iefix") format("embedded-opentype"), url("EffraLight-Regular.woff") format("woff"), url("EffraLight-Regular.ttf") format("truetype"), url("EffraLight-Regular.svg#5270f3221f518df120c54f775e32e7c4") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
 }
-/* line 42, ../sass/screen.scss */
-header[role="banner"] h1 {
-  padding: 15px 0;
-  color: #999;
-  font-size: 54px;
-  font-family: Georgia, serif;
-  font-weight: bold;
-  line-height: 1;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* line 64, ../sass/screen.scss */
-a {
-  text-decoration: none;
-  color: blue;
-}
-/* line 67, ../sass/screen.scss */
-a:hover {
-  color: #47ff3d;
-}
-/* line 70, ../sass/screen.scss */
-a:active {
-  color: #fff;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
-  /* Fallback for sad browsers */
-  background-color: #d42a78;
-  /* Mozilla Firefox */
-  background-image: -moz-linear-gradient(#ff70b1, #d42a78);
-  /* Opera */
-  background-image: -o-linear-gradient(#ff70b1, #d42a78);
-  /* Webkit (Safari 4+, Chrome 1+) */
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ff70b1), color-stop(1, #d42a78));
-  /* Webkit (Chrome 11+) */
-  background-image: -webkit-linear-gradient(#ff70b1, #d42a78);
-  /* IE10 */
-  background-image: -ms-linear-gradient(#ff70b1, #d42a78);
-  /* W3C */
-  background-image: linear-gradient(#ff70b1, #d42a78);
-}
-/* line 75, ../sass/screen.scss */
-a.alert {
-  color: red;
-}
-/* line 78, ../sass/screen.scss */
-a.success {
-  color: green;
-}
-
-/* line 84, ../sass/screen.scss */
+/*-------@font-face ends-------*/
+/* line 15, ../sass/screen.scss */
 body {
   padding: 0.8%;
   font-size: 100%;
-  font-family: "Helvetica Neue", Verdana, sans-serif;
+  font-family: "Effra", Verdana, Arial, sans-serif;
   color: #333;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+.content-wrapper {
+  margin: 0 auto;
+  padding: 0 30px 0 30px;
+}
+
+/* line 29, ../sass/screen.scss */
+header[role="banner"] {
+  background-color: #2f3e47;
+}
+/* line 40, ../sass/screen.scss */
+header[role="banner"] h1 {
+  padding: 15px 0 18px 0;
+  margin: 0 auto;
+  color: #999;
+  font-size: 2.5em;
+  font-family: "Effra Light", Verdans, Arial, sans-serif;
+  line-height: 1;
+  text-align: center;
+}
+
+/* line 60, ../sass/screen.scss */
+section {
+  margin-top: 20px;
+}
+
+/* line 64, ../sass/screen.scss */
 section.main h2 {
   margin: 0 0 20px 0;
-  font-family: Georgia, serif;
-  font-size: 20px;
+  font-family: "Effra", Verdana, Arial, sans-serif;
+  font-size: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
   color: #333;
-  background: #eee;
+  background: #fff;
+  font-size: 1.4em;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 section.main h3 {
   margin: 0 0 20px 0;
-  font-family: Georgia, serif;
-  font-size: 20px;
+  font-family: "Effra", Verdana, Arial, sans-serif;
+  font-size: 1.25em;
   font-weight: bold;
-  text-transform: uppercase;
-  color: #47ff3d;
-  background: #color-light;
   color: #999;
+  background: #fff;
+  font-size: 1.2em;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 section.main p {
   margin: 0 0 20px 0;
   line-height: 1.4;
 }
 
-/* line 109, ../sass/screen.scss */
-section.color .primary {
-  width: 100%;
-  height: 80px;
-  clear: both;
-  background: #17ff0a;
+/* line 80, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: #fb681b;
 }
-/* line 113, ../sass/screen.scss */
-section.color .secondary {
-  width: 100%;
-  height: 80px;
-  clear: both;
-  background: #08a300;
+/* line 83, ../sass/screen.scss */
+a:hover {
+  color: #2f3e47;
 }
-/* line 117, ../sass/screen.scss */
-section.color .tertiary {
-  width: 100%;
-  height: 80px;
-  clear: both;
-  background: #033d00;
+/* line 86, ../sass/screen.scss */
+a:active {
+  color: #fb681b;
+}
+/* line 89, ../sass/screen.scss */
+a.alert {
+  color: red;
+}
+/* line 92, ../sass/screen.scss */
+a.success {
+  color: green;
 }
