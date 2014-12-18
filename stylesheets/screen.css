@@ -2,6 +2,35 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/*-------@font-face-------*/
+@font-face {
+  font-family: 'Effra';
+  src: url("Effra-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("Effra-Regular.eot?#iefix") format("embedded-opentype"), url("Effra-Regular.woff") format("woff"), url("Effra-Regular.ttf") format("truetype"), url("Effra-Regular.svg#9415985da0ffc35466232532a260e2fc") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Effra';
+  src: url("Effra-Bold.eot");
+  /* IE9 Compat Modes */
+  src: url("Effra-Bold.eot?#iefix") format("embedded-opentype"), url("Effra-Bold.woff") format("woff"), url("Effra-Bold.ttf") format("truetype"), url("Effra-Bold.svg#4d3c8ad532dc39620c1a7258388fab6d") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Effra Light';
+  src: url("EffraLight-Regular.eot");
+  /* IE9 Compat Modes */
+  src: url("EffraLight-Regular.eot?#iefix") format("embedded-opentype"), url("EffraLight-Regular.woff") format("woff"), url("EffraLight-Regular.ttf") format("truetype"), url("EffraLight-Regular.svg#5270f3221f518df120c54f775e32e7c4") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
+  font-weight: 200;
+}
+/*-------@font-face ends-------*/
 /* line 5, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -67,54 +96,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/*-------@font-face-------*/
-@font-face {
-  font-family: 'Effra';
-  src: url("Effra-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("Effra-Regular.eot?#iefix") format("embedded-opentype"), url("Effra-Regular.woff") format("woff"), url("Effra-Regular.ttf") format("truetype"), url("Effra-Regular.svg#9415985da0ffc35466232532a260e2fc") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Effra';
-  src: url("Effra-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("Effra-Bold.eot?#iefix") format("embedded-opentype"), url("Effra-Bold.woff") format("woff"), url("Effra-Bold.ttf") format("truetype"), url("Effra-Bold.svg#4d3c8ad532dc39620c1a7258388fab6d") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Effra Light';
-  src: url("EffraLight-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("EffraLight-Regular.eot?#iefix") format("embedded-opentype"), url("EffraLight-Regular.woff") format("woff"), url("EffraLight-Regular.ttf") format("truetype"), url("EffraLight-Regular.svg#5270f3221f518df120c54f775e32e7c4") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 200;
-}
-/*-------@font-face ends-------*/
 /* line 15, ../sass/screen.scss */
 body {
   padding: 0.8%;
   font-size: 100%;
   font-family: "Effra", Verdana, Arial, sans-serif;
   color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 .content-wrapper {
   margin: 0 auto;
   padding: 0 30px 0 30px;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 header[role="banner"] {
   background-color: #2f3e47;
 }
-/* line 40, ../sass/screen.scss */
+/* line 32, ../sass/screen.scss */
 header[role="banner"] h1 {
   padding: 15px 0 18px 0;
   margin: 0 auto;
@@ -125,57 +128,52 @@ header[role="banner"] h1 {
   text-align: center;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 section {
   margin-top: 20px;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 section.main h2 {
-  margin: 0 0 20px 0;
-  font-family: "Effra", Verdana, Arial, sans-serif;
+  font-family: "Effra Light", Verdans, Arial, sans-serif;
   font-size: 1.25em;
-  font-weight: bold;
   color: #333;
   background: #fff;
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 section.main h3 {
-  margin: 0 0 20px 0;
-  font-family: "Effra", Verdana, Arial, sans-serif;
+  font-family: "Effra Light", Verdans, Arial, sans-serif;
   font-size: 1.25em;
-  font-weight: bold;
   color: #999;
   background: #fff;
-  font-size: 1.2em;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 section.main p {
   margin: 0 0 20px 0;
   line-height: 1.4;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 a {
   text-decoration: none;
   color: #fb681b;
 }
-/* line 83, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
 a:hover {
-  color: #2f3e47;
+  color: rgba(251, 104, 27, 0.8);
 }
-/* line 86, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 a:active {
-  color: #fb681b;
+  color: rgba(47, 62, 71, 0.8);
 }
-/* line 89, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 a.alert {
   color: red;
 }
-/* line 92, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 a.success {
   color: green;
 }

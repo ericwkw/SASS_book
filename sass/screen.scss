@@ -3,22 +3,23 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-//import
+// Base
+@import "partials/_base.scss";
+
+// Partials
 @import "compass/reset";
-@import "_mixin_prefixes.scss";
-@import "_mixin.scss";
-@import "_variables.scss";
-@import "_font.scss";
+@import "partials/_typography.scss";
+@import "partials/_grids.scss";
 
-//Styling
-
+// styling
 body {
   padding: 0.8%;
   font: {
     size: 100%;
     family: $font-sans;
   }
-  color: $color-main;
+  color: $main-color;
+  @include box-sizing(border-box);
 }
 
 .content-wrapper {
@@ -28,19 +29,10 @@ body {
 
 header[role="banner"] {
   
-  // #logo {
-  //   float: left;
-  //   margin: 0 20px 0 0;
-  //   img {
-  //     display: block;
-  //     opacity: .95;
-  //   }
-  // }
-  
   h1 {
     padding: 15px 0 18px 0;
     margin: 0 auto;
-    color: $color-light;
+    color: $light-color;
     font: {
       size: 2.5em;
       family: $font-light;
@@ -53,7 +45,7 @@ header[role="banner"] {
   }
 
   background: {
-    color: $color-brand;
+    color: $brand-color;
   }
 }
 
@@ -62,13 +54,12 @@ section {
 }
 
 section.main h2 {
-  @include title-style($color-main, #fff);
-  font-size: 1.4em;
+  @include title-style($main-color, #fff);
+  font-size: 1.5em;
 }
 
 section.main h3 {
-  @include title-style($color-light, #fff);
-  font-size: 1.2em;
+  @include title-style($light-color, #fff);
 }
 
 section.main p {
@@ -76,15 +67,15 @@ section.main p {
   line-height: 1.4;
 }
 
-
+// link style
 a {
   text-decoration: none;
-  color: $color-accent;
+  color: $accent-color;
   &:hover {
-    color: $color-brand;
+    color: $accent-80-color;
     }
   &:active {
-    color: $color-accent;
+    color: $brand-80-color;
   }
   &.alert {
     color: red;

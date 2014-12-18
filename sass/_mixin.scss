@@ -1,9 +1,0 @@
-//mixins
-@mixin title-style($color, $background: #eee) {
-  margin: 0 0 20px 0;
-  font-family: $font-sans;
-  font-size: 1.25em; // 20/16
-  font-weight: bold;
-  color: $color;
-  background: $background;
-}

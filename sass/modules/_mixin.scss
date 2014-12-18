@@ -1,0 +1,15 @@
+// removing quirks
+@mixin box-sizing($type) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+// mixins
+@mixin title-style($color, $background: #eee) {
+  // margin: 0 0 20px 0;
+  font-family: $font-light;
+  font-size: 1.25em; // 20/16
+  color: $color;
+  background: $background;
+} 
