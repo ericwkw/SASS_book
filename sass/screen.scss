@@ -13,6 +13,7 @@
 
 // styling
 body {
+  @include container(60em);
   padding: 0.8%;
   font: {
     size: 100%;
@@ -22,11 +23,9 @@ body {
   @include box-sizing(border-box);
 }
 
-.content-wrapper {
-  @include container(80em);
-  margin: 0 auto;
-  padding: 0 30px 0 30px;
-}
+// .content-wrapper {
+//   @include container(90em);
+// }
 
 header[role="banner"] {
   
@@ -50,20 +49,26 @@ header[role="banner"] {
   }
 }
 
-section {
-  margin-top: 20px;
+section .main {
+  float: left;
+  // width: span(1);
 }
 
-section.main h2 {
+section .second {
+  float: left;
+  // width: span(4);
+}
+
+section h2 {
   @include title-style($main-color, #fff);
   font-size: 1.5em;
 }
 
-section.main h3 {
+section h3 {
   @include title-style($medium-color, #fff);
 }
 
-section.main p {
+section p {
   margin: 0 0 20px 0;
   line-height: 1.4;
 }
