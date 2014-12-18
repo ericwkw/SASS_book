@@ -13,14 +13,12 @@
 
 // styling
 body {
-  @include container(60em);
   padding: 0.8%;
   font: {
     size: 100%;
     family: $font-sans;
   }
   color: $main-color;
-  @include box-sizing(border-box);
 }
 
 // .content-wrapper {
