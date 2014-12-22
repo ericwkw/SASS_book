@@ -8,8 +8,33 @@
 
 // Partials
 @import "compass/reset";
-@import "partials/_grids.scss";
 @import "partials/_typography.scss";
+@import "partials/_grids.scss";
+
+// grids
+.wrap {
+  @include container;
+}
+
+.content {
+  @include span(8);
+}
+
+.sidebar {
+  @include span(4 last);
+}
+
+.social {
+  padding: gutter();
+  @include clearfix;
+
+  .social__List-item {
+    @include span(1 of 10);
+    &:last-child {
+      @include last;
+    }
+  }
+}
 
 // styling
 body {
@@ -20,10 +45,6 @@ body {
   }
   color: $main-color;
 }
-
-// .content-wrapper {
-//   @include container(90em);
-// }
 
 header[role="banner"] {
   
@@ -58,12 +79,12 @@ section .second {
 }
 
 section h2 {
-  @include title-style($main-color, #fff);
+  // @include title-style($main-color, #fff);
   font-size: 1.5em;
 }
 
 section h3 {
-  @include title-style($medium-color, #fff);
+  // @include title-style($medium-color, #fff);
 }
 
 section p {

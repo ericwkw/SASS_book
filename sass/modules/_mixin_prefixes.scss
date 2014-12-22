@@ -24,11 +24,11 @@
   transition: $property .2s ease;
 }
 
-@mixin box-sizing {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+// @mixin box-sizing {
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+// }
 
 @mixin linear-gradient ($from , $to) {
   /* Fallback for sad browsers */
