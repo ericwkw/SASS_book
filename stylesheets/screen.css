@@ -2,40 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* Use Compass */
-/* Font weights */
-/* Base Font */
-/* Fixed Font */
-/* Headings */
-/*-------@font-face-------*/
-@font-face {
-  font-family: 'Effra';
-  src: url("Effra-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("Effra-Regular.eot?#iefix") format("embedded-opentype"), url("Effra-Regular.woff") format("woff"), url("Effra-Regular.ttf") format("truetype"), url("Effra-Regular.svg#9415985da0ffc35466232532a260e2fc") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 400;
-}
-@font-face {
-  font-family: 'Effra';
-  src: url("Effra-Bold.eot");
-  /* IE9 Compat Modes */
-  src: url("Effra-Bold.eot?#iefix") format("embedded-opentype"), url("Effra-Bold.woff") format("woff"), url("Effra-Bold.ttf") format("truetype"), url("Effra-Bold.svg#4d3c8ad532dc39620c1a7258388fab6d") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 700;
-}
-@font-face {
-  font-family: 'Effra Light';
-  src: url("EffraLight-Regular.eot");
-  /* IE9 Compat Modes */
-  src: url("EffraLight-Regular.eot?#iefix") format("embedded-opentype"), url("EffraLight-Regular.woff") format("woff"), url("EffraLight-Regular.ttf") format("truetype"), url("EffraLight-Regular.svg#5270f3221f518df120c54f775e32e7c4") format("svg");
-  /* Legacy iOS */
-  font-style: normal;
-  font-weight: 200;
-}
-/*-------@font-face ends-------*/
+/* Base */
 /* line 5, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -101,6 +68,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* Mixin */
+/* Partials */
+/* Changing Susy default global settings */
+/* Makes border-box properties */
 /* line 14, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -108,11 +79,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   box-sizing: border-box;
 }
 
-/* line 15, ../sass/screen.scss */
+/* basic grid */
+/* line 21, ../sass/partials/_grids.scss */
 .wrap {
-  max-width: 1120px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
+  background-image: linear-gradient(to right, rgba(102, 102, 255, 0.25), rgba(179, 179, 255, 0.25) 80%, transparent 80%);
+  background-size: 6.32911%;
+  background-origin: content-box;
+  background-clip: content-box;
+  background-position: left top;
 }
 /* line 12, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.1.3/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
@@ -121,101 +98,146 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   clear: both;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 25, ../sass/partials/_grids.scss */
 .content {
-  width: 66.10169%;
+  width: 74.68354%;
   float: left;
-  margin-right: 1.69492%;
+  margin-right: 1.26582%;
+}
+/* line 5, ../sass/modules/_mixin.scss */
+.content:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 30, ../sass/partials/_grids.scss */
 .sidebar {
-  width: 32.20339%;
+  width: 24.05063%;
   float: right;
   margin-right: 0;
 }
-
-/* line 27, ../sass/screen.scss */
-.social {
-  padding: 1.69492%;
-  overflow: hidden;
-  *zoom: 1;
+/* line 5, ../sass/modules/_mixin.scss */
+.sidebar:after {
+  content: "";
+  display: block;
+  clear: both;
 }
-/* line 31, ../sass/screen.scss */
-.social .social__List-item {
-  width: 8.16327%;
+
+/* line 35, ../sass/partials/_grids.scss */
+.gallery {
+  width: span 10 of 12;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 5, ../sass/modules/_mixin.scss */
+.gallery:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* line 42, ../sass/partials/_grids.scss */
+.gallery__item {
+  list-style: none;
+  width: 18.36735%;
   float: left;
   margin-right: 2.04082%;
 }
-/* line 33, ../sass/screen.scss */
-.social .social__List-item:last-child {
+/* line 45, ../sass/partials/_grids.scss */
+.gallery__item:nth-child(5n) {
   float: right;
   margin-right: 0;
 }
 
-/* line 40, ../sass/screen.scss */
-body {
-  padding: 0.8%;
-  font-size: 100%;
-  font-family: "Effra", Verdana, Arial, sans-serif;
-  color: #111;
+/* line 5, ../sass/modules/_mixin.scss */
+.site-footer:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
-/* line 49, ../sass/screen.scss */
-header[role="banner"] {
-  background-color: #2f3e47;
-}
-/* line 51, ../sass/screen.scss */
-header[role="banner"] h1 {
-  padding: 15px 0 18px 0;
-  margin: 0 auto;
-  color: #ccc;
-  font-size: 2.5em;
-  font-family: "Effra Light", Verdans, Arial, sans-serif;
-  line-height: 1;
+/* Styling */
+/* line 20, ../sass/screen.scss */
+h2 {
+  padding: 1rem 0;
   text-align: center;
+  color: #555;
 }
 
-/* line 71, ../sass/screen.scss */
-section .main {
-  float: left;
+/* line 26, ../sass/screen.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 76, ../sass/screen.scss */
-section .second {
-  float: left;
+/* line 31, ../sass/screen.scss */
+img {
+  max-width: 100%;
+  height: auto;
 }
 
-/* line 81, ../sass/screen.scss */
-section h2 {
-  font-size: 1.5em;
+/* line 36, ../sass/screen.scss */
+.site-header, .site-footer {
+  background: rgba(234, 159, 195, 0.8);
 }
 
-/* line 90, ../sass/screen.scss */
-section p {
-  margin: 0 0 20px 0;
-  line-height: 1.4;
-}
-
-/* line 96, ../sass/screen.scss */
-a {
+/* line 41, ../sass/screen.scss */
+.site-header a {
+  color: #555;
   text-decoration: none;
-  border-bottom: 1px solid #ccc;
-  color: #fb681b;
 }
-/* line 100, ../sass/screen.scss */
-a:hover {
-  color: rgba(251, 104, 27, 0.8);
+
+/* line 47, ../sass/screen.scss */
+.logo {
+  float: left;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
-/* line 103, ../sass/screen.scss */
-a:active {
-  color: rgba(47, 62, 71, 0.8);
+
+/* line 53, ../sass/screen.scss */
+nav {
+  float: right;
 }
-/* line 106, ../sass/screen.scss */
-a.alert {
-  color: red;
+/* line 56, ../sass/screen.scss */
+nav li {
+  list-style: none;
+  float: left;
+  margin-left: 1em;
+  line-height: 2rem;
 }
-/* line 109, ../sass/screen.scss */
-a.success {
-  color: green;
+
+/* line 64, ../sass/screen.scss */
+.content {
+  margin-top: 5vh;
+  padding-bottom: 1rem;
+  background: rgba(113, 218, 218, 0.8);
+}
+
+/* line 70, ../sass/screen.scss */
+.sidebar {
+  margin-top: 5vh;
+  padding-bottom: 1rem;
+  background: rgba(250, 231, 179, 0.8);
+}
+/* line 75, ../sass/screen.scss */
+.sidebar li {
+  list-style: none;
+}
+/* line 78, ../sass/screen.scss */
+.sidebar li a {
+  color: #666;
+  padding-left: 1rem;
+  line-height: 2;
+  text-decoration: none;
+}
+
+/* line 87, ../sass/screen.scss */
+.widget {
+  background: rgba(240, 150, 113, 0.8);
+}
+
+/* line 91, ../sass/screen.scss */
+.site-footer {
+  margin-top: 5vh;
 }

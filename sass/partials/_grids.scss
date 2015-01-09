@@ -3,11 +3,50 @@
 
 @import "susy";
 
-// Changing Susu default global settings
+/* Changing Susy default global settings */
 $susy: (
-  columns: 12,
-  container: 1120px,
-  global-box-sizing: border-box
+  columns: 16,
+  // gutters: 1/4,
+  // container: 1140px,
+  global-box-sizing: border-box,
+  debug: (image: show),
 );
 
+/* Makes border-box properties */
 @include border-box-sizing;
+
+
+/* basic grid */
+
+.wrap {
+  @include container ($wide-screens);
+}
+
+.content {
+  @include cf;
+  @include span (12 of 16);
+}
+
+.sidebar {
+  @include cf;
+  @include span (4 of 16 last);
+}
+
+.gallery {
+  @include cf;
+  width: span (10 of 12);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery__item {
+  list-style: none;
+  @include span (2 of 10);
+  &:nth-child(5n) {
+    @include last;
+  }
+}
+
+.site-footer {
+  @include cf;
+}
