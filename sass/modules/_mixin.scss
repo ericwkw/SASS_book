@@ -3,7 +3,7 @@
 // clearfix mixin
 @mixin cf {
   &:after {
-    content: "";
+    content: " ";
     display: block;
     clear: both;
   }

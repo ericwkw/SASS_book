@@ -5,7 +5,7 @@
 
 /* Changing Susy default global settings */
 $susy: (
-  columns: 16,
+  columns: 16, // $context
   // gutters: 1/4,
   // container: 1140px,
   global-box-sizing: border-box,
@@ -24,27 +24,31 @@ $susy: (
 
 .content {
   @include cf;
-  @include span (12 of 16);
+  @include span(12 of 16);
 }
 
 .sidebar {
   @include cf;
-  @include span (4 of 16 last);
-}
-
-.gallery {
-  @include cf;
-  width: span (10 of 12);
-  margin-left: auto;
-  margin-right: auto;
+  @include span(4 of 16 last);
 }
 
 .gallery__item {
   list-style: none;
-  @include span (2 of 10);
+  @include span(2 of 10);
   &:nth-child(5n) {
     @include last;
   }
+}
+
+// .gallery {
+//   width: span(10 of 12);
+//   margin-left: auto;
+//   margin-right: auto;
+// }
+
+.gallery {
+  padding-left: span(1 of 12) + gutter(12);
+  padding-right: span(1 of 12) + gutter(12);
 }
 
 .site-footer {
