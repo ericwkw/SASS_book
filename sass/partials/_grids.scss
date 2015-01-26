@@ -35,10 +35,13 @@ $susy: (
 .gallery__item {
   list-style: none;
   @include span(2 of 10);
-  &:nth-child(5n) {
+  &:nth-child(5n) { //important to remember to clear the last item in the same row so that it has o margin-right
     @include last;
   }
+  margin-bottom: gutter(10);
 }
+
+// The context-changing method
 
 // .gallery {
 //   width: span(10 of 12);
@@ -46,11 +49,35 @@ $susy: (
 //   margin-right: auto;
 // }
 
+// The math method (span + gutter method)
+
+// .gallery {
+//   padding-left: span(1 of 12) + gutter(12); // 1 column plus 1 gutter
+//   padding-right: span(1 of 12) + gutter(12); // 1 column plus 1 gutter
+// }
+
+// The math method (span with $spread keyword)
+
 .gallery {
-  padding-left: span(1 of 12) + gutter(12);
-  padding-right: span(1 of 12) + gutter(12);
+  padding-left: span(1 of 12 wide);
+  padding-right: span(1 of 12 wide);
 }
 
 .site-footer {
   @include cf;
+}
+
+// Tedious method
+
+// .widget {
+//   @include span(4 of 16);
+//   &:nth-child(4n) {
+//     @include last; 
+//     // delete margin-right of the last item so that it floats to the right
+//   }
+// }
+
+// The  Gallery Mixin (caveat: width and margin of each gallery item has to be the same)
+.widget {
+  @include gallery(4 of 16);
 }

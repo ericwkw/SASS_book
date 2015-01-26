@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* Partials */
 /* Changing Susy default global settings */
 /* Makes border-box properties */
-/* line 21, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.1/sass/susy/language/susy/_box-sizing.scss */
+/* line 21, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -91,7 +91,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-clip: content-box;
   background-position: left top;
 }
-/* line 12, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.1/sass/susy/output/support/_clearfix.scss */
+/* line 12, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
 .wrap:after {
   content: " ";
   display: block;
@@ -130,6 +130,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   width: 18.36735%;
   float: left;
   margin-right: 2.04082%;
+  margin-bottom: 2.04082%;
 }
 /* line 38, ../sass/partials/_grids.scss */
 .gallery__item:nth-child(5n) {
@@ -137,7 +138,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: 0;
 }
 
-/* line 49, ../sass/partials/_grids.scss */
+/* line 61, ../sass/partials/_grids.scss */
 .gallery {
   padding-left: 8.47458%;
   padding-right: 8.47458%;
@@ -148,6 +149,37 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   content: " ";
   display: block;
   clear: both;
+}
+
+/* line 81, ../sass/partials/_grids.scss */
+.widget {
+  width: 24.05063%;
+  float: left;
+}
+/* line 66, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(4n + 1) {
+  margin-left: 0;
+  margin-right: -100%;
+  clear: both;
+  margin-left: 0;
+}
+/* line 66, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(4n + 2) {
+  margin-left: 25.31646%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(4n + 3) {
+  margin-left: 50.63291%;
+  margin-right: -100%;
+  clear: none;
+}
+/* line 66, ../../../.rbenv/versions/2.2.0-dev/lib/ruby/gems/2.2.0/gems/susy-2.2.2/sass/susy/language/susy/_gallery.scss */
+.widget:nth-child(4n + 4) {
+  margin-left: 75.94937%;
+  margin-right: -100%;
+  clear: none;
 }
 
 /* Styling */
