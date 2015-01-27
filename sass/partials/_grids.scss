@@ -72,7 +72,7 @@ $susy: (
 // .widget {
 //   @include span(4 of 16);
 //   &:nth-child(4n) {
-//     @include last; 
+//     @include last;
 //     // delete margin-right of the last item so that it floats to the right
 //   }
 // }
